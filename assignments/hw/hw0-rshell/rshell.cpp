@@ -14,10 +14,10 @@
 using namespace std;
 using namespace boost;
 
-typedef tokenizer<char_sep<char> > tok
+typedef tokenizer<char_separator<char> > tok
 
 void bash(char **argv)
-void readcmd (const string &input)
+void readcmd (const string input)
 
 
 int main()
@@ -41,5 +41,41 @@ int main()
 	return 0;
 }
 
+void readcmd (const string input)
+{
 
-void bash
+}
+
+
+void bash()
+{
+	int status = 0;
+	int pid - fork();
+	if(pid < 0)
+	{
+		perror("fork() had an error. \n");
+		exit(1);
+
+	}
+	else if(pid == 0)
+	{
+		if (execvp(argv[0], argv) == -1)
+		{
+			perror("execvp() had an error. \n");
+		}
+		exit(1);
+	}
+	else if(pid > 0)
+	{
+		if (wait(&status) == -1)
+		{
+			perror("wait() had an error. \n");
+		}
+	}
+	
+	return status;
+}
+
+
+
+
