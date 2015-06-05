@@ -1,1 +1,15 @@
-/ 100
+70/ 100
+Last update Fri May 29 16:28:56 2015 -0700
+
+cd PATH: /20
+     (The prompt must change correctly for all of the cases for full credit)
+    [0/5] Change to a directory specified using an absolute path.
+    [0/5] Change to a directory which does not exist.
+
+cd -: 0/20
+
+extra credit 1: /30
+    [0/10] fg
+    [0/10] bg
+
+extra credit 2: 0/5
